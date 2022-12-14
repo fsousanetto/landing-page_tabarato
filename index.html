@@ -14,9 +14,6 @@
   <link rel="shortcut icon" href="assets/images/logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/fonts/style.css" />
 
-  <!-- Swiper -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-
   <!-- STYLES -->
   <link rel="stylesheet" href="style.css" />
 
@@ -31,6 +28,7 @@
   <header id="header">
     <nav class="container">
       <a class="logo" href="#">Ta<span>Barato</span></a>
+      <!-- <a href="#home" class="logo"> <img src="./assets/images/logo_sem_bg_full.png" alt=""> </a> -->
       <!-- menu -->
       <div class="menu">
         <ul class="grid">
@@ -58,7 +56,9 @@
         <div class="text">
           <h1 class="title">#Ta<span>Barato</span></h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab veniam quos dignissimos cumque illo soluta maiores odit, ratione rerum suscipit numquam officia corrupti commodi voluptas error. Voluptate veniam debitis eveniet!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab veniam quos dignissimos cumque illo soluta
+            maiores odit, ratione rerum suscipit numquam officia corrupti commodi voluptas error. Voluptate veniam
+            debitis eveniet!
           </p>
           <!-- <a class="button"
             href="https://api.whatsapp.com/send?phone=+5591991480421&text=E aí?! Aqui é do #TáBarato?"
@@ -104,76 +104,72 @@
     <div class="divider-2"></div>
 
     <!-- services -->
+
     <section class="section" id="service">
-      <div class="container">
-        <header>
+      <div id="container">
+        <header class="text">
           <h2 class="title">Nossos Serviços</h2>
         </header>
-        <div class="services swiper-container">
-          <div class="swiper-wrapper">
-            <div class="service swiper-slide">
-                <div class="card">
-                  <i class="#"></i>
-                  <h3 class="title">Mercado</h3>
-                  <img src="assets/images/supermarket_full.jpg" alt="">
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, deserunt doloribus eaque, reiciendis commodi temporibus mollitia doloremque inventore quisquam obcaecati cumque dolores placeat sit corrupti? Et iste qui placeat amet?
-                  </p>
-                </div>
+        <div id="slider-container">
+          <span onclick="slideRight()" class="btn"></span>
+          <div id="slider">
+            <div class="slide grid">
+              <h3 class="title">Mercado</h3>
+              <img src="assets/images/supermarket_full.jpg" alt="">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, deserunt doloribus eaque, reiciendis
+                commodi
+                temporibus mollitia doloremque inventore quisquam obcaecati cumque dolores placeat sit corrupti? Et iste
+                qui placeat
+                amet?
+              </p>
             </div>
-            <div class="service swiper-slide">
-              <div class="card">
-                <i class="#"></i>
-                <h3 class="title">Shop</h3>
-                <img src="assets/images/shop_full.jpg" alt="">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, deserunt doloribus eaque, reiciendis commodi
-                  temporibus mollitia doloremque inventore quisquam obcaecati cumque dolores placeat sit corrupti? Et iste qui
-                  placeat amet?
-                </p>
-              </div>
+            <div class="slide">
+              <h3 class="title">Shop</h3>
+              <img src="assets/images/shop_full.jpg" alt="">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, deserunt doloribus eaque, reiciendis
+                commodi
+                temporibus mollitia doloremque inventore quisquam obcaecati cumque dolores placeat sit corrupti? Et iste
+                qui
+                placeat amet?
+              </p>
             </div>
-            <div class="service swiper-slide">
-              <div class="card">
-                <i class="#"></i>
-                <h3 class="title">Empresas</h3>
-                <img src="assets/images/small_business_full.jpg" alt="">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, deserunt doloribus eaque, reiciendis commodi
-                  temporibus mollitia doloremque inventore quisquam obcaecati cumque dolores placeat sit corrupti? Et iste qui
-                  placeat amet?
-                </p>
-              </div>
+            <div class="slide">
+              <h3 class="title">Empresas</h3>
+              <img src="assets/images/small_business_full.jpg" alt="">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, deserunt doloribus eaque, reiciendis
+                commodi
+                temporibus mollitia doloremque inventore quisquam obcaecati cumque dolores placeat sit corrupti? Et iste
+                qui
+                placeat amet?
+              </p>
             </div>
-            <div class="service swiper-slide">
-              <div class="card">
-                <i class="#"></i>
-                <h3 class="title">Refeição</h3>
-                <img src="assets/images/food_full.jpg" alt="">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, deserunt doloribus eaque, reiciendis commodi
-                  temporibus mollitia doloremque inventore quisquam obcaecati cumque dolores placeat sit corrupti? Et iste qui
-                  placeat amet?
-                </p>
-              </div>
+            <div class="slide">
+              <h3 class="title">Refeição</h3>
+              <img src="assets/images/food_full.jpg" alt="">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, deserunt doloribus eaque, reiciendis
+                commodi
+                temporibus mollitia doloremque inventore quisquam obcaecati cumque dolores placeat sit corrupti? Et iste
+                qui
+                placeat amet?
+              </p>
             </div>
-            <div class="service swiper-slide">
-              <div class="card">
-                <i class="#"></i>
-                <h3 class="title">Lanches</h3>
-                <img src="assets/images/snack_full.jpg" alt="">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, deserunt doloribus eaque, reiciendis commodi
-                  temporibus mollitia doloremque inventore quisquam obcaecati cumque dolores placeat sit corrupti? Et iste qui
-                  placeat amet?
-                </p>
-              </div>
+            <div class="slide">
+              <h3 class="title">Lanches</h3>
+              <img src="assets/images/snack_full.jpg" alt="">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, deserunt doloribus eaque, reiciendis
+                commodi
+                temporibus mollitia doloremque inventore quisquam obcaecati cumque dolores placeat sit corrupti? Et iste
+                qui
+                placeat amet?
+              </p>
             </div>
           </div>
-
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-          
+          <span onclick="slideLeft()" class="btn"></span>
         </div>
       </div>
     </section>
@@ -258,14 +254,13 @@
             Entre em contato com o #TaBarato, queremos tirar suas dúvidas,
             ouvir suas críticas e sugestões.
           </p>
-          <a href="https://api.whatsapp.com/send?phone=+5591991480421&text=E aí? Aqui é do #TáBarato?"
-            class="button" target="_blank"><i class="icon-whatsapp"></i> Entrar em contato</a>
+          <a href="https://api.whatsapp.com/send?phone=+5591991480421&text=E aí? Aqui é do #TáBarato?" class="button"
+            target="_blank"><i class="icon-whatsapp"></i> Entrar em contato</a>
         </div>
 
         <div class="links">
           <ul class="grid">
-            <li><a
-                href="https://api.whatsapp.com/send?phone=+5591991480421&text=E aí? Aqui é do #TáBarato?"><i
+            <li><a href="https://api.whatsapp.com/send?phone=+5591991480421&text=E aí? Aqui é do #TáBarato?"><i
                   class="icon-phone"></i> 99 99999-9999</a></li>
             <li><a href="https://goo.gl/maps/sGXX8QkKVsA4GUiE7" target="_blank" rel="noopener noreferrer"> <i
                   class="icon-map-pin"></i> Av. Sucesso, 9999</a></li>
@@ -293,17 +288,14 @@
         </a>
         <a href="https://facebook.com" target="_blank">
           <i class="icon-facebook"></i></a>
-        <a href="https://api.whatsapp.com/send?phone=+5591991480421&text=E aí? Aqui é do #TáBarato?"
-          target="_blank"><i class="icon-whatsapp"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=+5591991480421&text=E aí? Aqui é do #TáBarato?" target="_blank"><i
+            class="icon-whatsapp"></i></a>
       </div>
     </div>
   </footer>
 
   <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
 
-  <!-- swiper -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  
   <!-- scrollreveal -->
   <script src="https://unpkg.com/scrollreveal"></script>
 

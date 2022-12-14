@@ -142,6 +142,7 @@
   }
   
   /*====  LOGO ============================ */
+
   .logo {
     font: 700 1.31rem var(--title-font);
     color: var(--title-color);
@@ -351,56 +352,89 @@
   #service {
     position: relative;
     background-size: cover;
-    background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,1)), url(./assets/images/delicious_full.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,1)), url(./assets/images/bg_services_full.png);
     height: auto;
     background-attachment: fixed;
   }
-  
-  .cards.grid {
-    gap: 1.5rem;
+
+  #container {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: grid ;
+    place-items: center
   }
-  
-  .card {
-    padding: 3.625rem 2rem;
-    margin: 0 8px 0 8px;
+
+  #slider-container {
+    height: 550px;
+    width: 85vw;
+    max-width: 1400px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  #slider-container p {
+    margin: 25px;
+  }
+
+  #slider-container img {
+    width: 85%;
+  }
+
+  #slider-container .btn {
+    position: absolute;
+    top: calc(50% - 30px);
+    height: 30px;
+    width: 30px;
+    border-left: 8px solid pink;
+    border-top: 8px solid pink;
+  }
+
+  #slider-container .btn:hover {
+    transform: scale(1.2);
+  }
+
+  #slider-container .btn.inactive {
+    border-color: red;
+  }
+
+  #slider-container .btn:first-of-type {
+    transform: rotate(-45deg);
+    left: 10px
+  }
+
+  #slider-container .btn:last-of-type {
+    transform: rotate(135deg);
+    right: 10px;
+  }
+
+  #slider-container #slider {
+    display: flex;
+    width: 1000%;
+    height: 100%; 
+    transition: all .5s;
+  }
+
+  #slider-container #slider .slide {
+    justify-items: start;
+    height: 100%%;
+    margin: 0 5px 0 5px;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.8);
-    border-bottom: 0.25rem solid var(--base-color);
-    border-radius: 0.25rem 0.25rem 0 0;
-    text-align: center;
+    display: grid;
+    place-items: center;
   }
-  
-  .card i {
-    display: block;
-    margin-bottom: 1.5rem;
-    font-size: 5rem;
-    color: var(--base-color);
+
+  #slider-container #slider .slide span {
+    color: white;
+    font-size: 150px;
   }
-  
-  .card .title {
+
+  #slider-container .title {
     color: var(--text-color-light);
     font-size: 1.5rem;
     margin-bottom: 0.75rem;
-  }
-
-  .card img {
-    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.8);
-    border-bottom: 0.25rem solid var(--base-color);
-    border-radius: 0.25rem 0.25rem 0 0;
-  }
-
-  /* swiper */
-  .swiper-slide {
-    height: auto;
-    padding: 4rem 1rem;
-  }
-  
-  .swiper-pagination-bullet {
-    width: 0.75rem;
-    height: 0.75rem;
-  }
-  
-  .swiper-pagination-bullet-active {
-    background: var(--base-color);
   }
   
   /* SOCIAL WORK */
@@ -556,12 +590,46 @@
     transform: translateX(0);
   }
   
+  /* ========= media queries carousel */
+
+  @media only screen and (min-width: 1100px) {
+
+    #slider-container #slider .slide {
+      width: calc(2.5% - 20px);
+    }
+
+  }
+
+  @media only screen and (max-width: 1100px) {
+
+    #slider-container #slider .slide {
+      width: calc(3.3333333% - 20px);
+    }
+
+  }
+
+  @media only screen and (max-width: 900px) {
+
+    #slider-container #slider .slide {
+      width: calc(5% - 20px);
+    }
+
+  }
+
+  @media only screen and (max-width: 550px) {
+
+    #slider-container #slider .slide {
+      width: calc(10% - 20px);
+    }
+
+  }
+
   /*========= MEDIA QUERIES =========*/
   /* extra large devices: 1200 > */
   @media (min-width: 1200px) {
     /* reusable classes */
     .container {
-      max-width: 1120px;
+      max-width: 1250px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -644,6 +712,7 @@
     .card {
       padding-left: 3rem;
       padding-right: 3rem;
+      margin: 0 0.3125rem 0 0.3125rem;
     }
   
     /* services */
