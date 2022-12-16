@@ -419,7 +419,7 @@
 
   #slider-container #slider .slide {
     justify-items: start;
-    height: 100%%;
+    height: 100%;
     margin: 0 5px 0 5px;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.8);
     display: grid;
@@ -592,7 +592,7 @@
   
   /* ========= media queries carousel */
 
-  @media only screen and (min-width: 1100px) {
+  @media only screen and (min-width: 1200px) {
 
     #slider-container #slider .slide {
       width: calc(2.5% - 20px);
@@ -629,7 +629,7 @@
   @media (min-width: 1200px) {
     /* reusable classes */
     .container {
-      max-width: 1250px;
+      max-width: 1150px;
       margin-left: auto;
       margin-right: auto;
     }
