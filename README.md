@@ -38,10 +38,10 @@ Solução Tecnológica
 - [Clara Freitas](https://github.com/claraff22)
 - [Kervin ES](https://github.com/kervines)
 - [Francisco Netto](https://www.github.com/fsousanetto)
-- [Bruno Augusto]
-- [Jonathan Francelino]
-- [Mille Amorin]
-- [Bruno Silva]
+- Bruno Augusto
+- Jonathan Francelino
+- Mille Amorin
+- Bruno Silva
 
 ## 💻 Desenvolvedores
 
