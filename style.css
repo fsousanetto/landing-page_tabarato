@@ -289,6 +289,11 @@
   #home .image img {
     border-radius: 0.25rem;
   }
+
+  #home .image img:hover {
+    transform: scale3d(1.2, 1.2, 1);
+    transition: transform 5s ease-in-out;
+  }
   
   #home .text {
     color: var(--text-color-light);
@@ -336,6 +341,11 @@
     border-radius: 0.25rem;
     box-shadow: 0px 0px 15px rgba(0,0,0,1);
     border-bottom: 0.50rem solid var(--base-color);
+  }
+
+  #about .image img:hover {
+    transform: scale3d(1.2, 1.2, 1);
+    transition: transform 5s ease-in-out;
   }
   
   #about .text {
@@ -493,6 +503,11 @@
     border-radius: 0.25rem;
     box-shadow: 0px 0px 15px rgba(0,0,0,1);
     border-bottom: 0.50rem solid var(--base-color);
+  }
+
+  #tech-solution .image img:hover {
+    transform: scale3d(1.2, 1.2, 1);
+    transition: transform 5s ease-in-out;
   }
 
   #tech-solution .text {
