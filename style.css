@@ -186,15 +186,16 @@
     background: var(--base-color);
   
     position: absolute;
-    left: 0;
+    left: 50%;
     bottom: -1.5rem;
   
-    transition: width 0.2s;
+    transition: all 0.2s ease-in-out;
   }
   
   nav ul li a:hover::after,
   nav ul li a.active::after {
     width: 100%;
+    left: 0;
   }
   
   nav .menu {
