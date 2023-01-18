@@ -181,7 +181,7 @@ window.addEventListener('scroll', function () {
 /* Current year */
 const paragraph = `
   <p>
-    <small>Copyright &copy;Netto_Dev ${new Date().getFullYear()}</small>
+    <small>Feito com ❤️ by TaBarato ${new Date().getFullYear()}</small>
   <p>
 `;
 
