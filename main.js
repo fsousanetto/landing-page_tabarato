@@ -183,7 +183,7 @@ window.addEventListener('scroll', function () {
 /* Current year */
 const paragraph = `
   <p>
-    <small>Feito com ❤️ by TaBarato ${new Date().getFullYear()}</small>
+    <p>Todos os direitos reservados TaBarato ${new Date().getFullYear()}</p>
   <p>
 `;
 
