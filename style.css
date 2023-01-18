@@ -601,23 +601,48 @@ textarea {
     background-image: url(./assets/images/wave.png);
     height: auto;
   }
+
+  footer ul li i {
+    font-size: .8rem;
+    margin-right: 0.625rem;
+  }
+  
+  footer ul.grid {
+    gap: 1rem;
+  }
+  
+  footer ul li {
+    display: flex;
+    align-items: center;
+  }
+
+  footer ul li a {
+    color: var(--text-color-light);
+    font-size: .8rem;
+  }
+
+  footer ul li a:hover {
+    color: var(--text-color);
+  }
   
   footer.section {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
   
   footer .logo {
     display: inline-block;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
+    margin-top: 1.2rem;
   }
   
   footer .brand p {
     color: var(--text-color-light);
     margin-bottom: 0.75rem;
+    font-size: .8rem;
   }
   
   footer i {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--text-color-light);
   }
   
