@@ -132,7 +132,7 @@ scrollReveal.reveal(
   #contact .text, #contact input,
   #contact textarea,
   footer .brand, footer .social,
-  footer .link
+  footer .links
   `,
   { interval: 100 }
 )
