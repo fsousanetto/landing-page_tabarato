@@ -129,9 +129,10 @@ scrollReveal.reveal(
   #service header, #service .card,
   #social-work .image, #social-work .text,
   #tech-solution .image, #tech-solution .text,
-  #contact .text, #contact .links, #contact input,
+  #contact .text, #contact input,
   #contact textarea,
-  footer .brand, footer .social
+  footer .brand, footer .social,
+  footer .link
   `,
   { interval: 100 }
 )
