@@ -182,7 +182,7 @@ const sendWpp = () => {
   let email = document.getElementById('email').value;
   let message = document.getElementById('message').value;
 
-  let urlSend = "https://wa.me/5591984600351?text="
+  let urlSend = "https://wa.me/5591984268089?text="
         + "*Formulário de Contato*" + "%0a" 
         + "%0a" 
         + "*Nome*: " + name + "%0a" 
