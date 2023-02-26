@@ -44,7 +44,7 @@
   /*===  BASE ============================ */
   html {
     scroll-behavior: smooth;
-    overflow-y: hidden;
+    overflow-x: hidden;
   }
   
   body {
