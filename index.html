@@ -13,6 +13,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
     rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
 </head>
 
 <body>
@@ -93,44 +96,47 @@
         <header class="text">
           <h2 class="title">Nossos Serviços</h2>
         </header>
-        <div id="slider-container">
-          <span onclick="slideRight()" class="btn"></span>
-          <div id="slider">
-            <div class="slide grid">
-              <h3 class="title">Mercado</h3>
-              <img src="assets/images/supermarket_full.jpg" alt="">
-              <p>Pra você que gosta de aproveitar ofertas e economizar nas suas compras: os mercados em sua região podem adicionar ofertas de qualquer tipo de produto e você entra em contato diretamente com o vendedor para informar seu interesse!</p>
-            </div>
-            <div class="slide">
-              <h3 class="title">Restaurantes</h3>
-              <img src="assets/images/restaurant_full.jpg" alt="">
-              <p>
-                Bateu aquela fome? Você pode acessar promoções de restaurante próximos a você! Os restaurantes podem adicionar qualquer promoção: descontos do dia ou até mesmo ofertas para comidas que seriam desperdiçadas!
+        
+        <!-- SWIPER CAROUSEL -->
+        <div class="card">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <h3 class="title">Mercado</h3>
+                <img src="assets/images/supermarket_full.jpg" alt="">
+                <p>Pra você que gosta de aproveitar ofertas e economizar nas suas compras: os mercados em sua região podem adicionar ofertas de qualquer tipo de produto e você entra em contato diretamente com o vendedor para informar seu interesse!</p>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="title">Restaurantes</h3>
+                <img src="assets/images/restaurant_full.jpg" alt="">
+                <p>
+                  Bateu aquela fome? Você pode acessar promoções de restaurante próximos a você! Os restaurantes podem adicionar qualquer promoção: descontos do dia ou até mesmo ofertas para comidas que seriam desperdiçadas!
               </p>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="title">Empresas</h3>
+                <img src="assets/images/small_business_full.jpg" alt="">
+                <p>
+                  Aqui no Tá Barato todas as empresas ganham espaço para divulgar seus produtos! Desde pequenas vendas até mercados de atacado, no nosso aplicativo, é possível adicionar ofertas. Vem diminuir o desperdício com a gente!
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="title">Refeição</h3>
+                <img src="assets/images/food_full.jpg" alt="">
+                <p>
+                  Quando tudo que você precisa é uma refeição, no aplicativo Tá Barato, você encontra ofertas de pequenos ou grandes empreendimentos, disponibilizando marmitas, refeições completas... E com um clique você pode se comunicar com o vendedor! 
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="title">Lanches</h3>
+                <img src="assets/images/snack_full.jpg" alt="">
+                <p>
+                  Bateu aquela fome de lanche? Aqui você encontra um espaço com as melhores ofertas de lanches na sua região! Você pode encontrar descontos daquela vendinha favorita e até mesmo de lanchonetes do seu bairro. Informe o seu interesse e bom apetite!
+                </p>
+              </div>
             </div>
-            <div class="slide">
-              <h3 class="title">Empresas</h3>
-              <img src="assets/images/small_business_full.jpg" alt="">
-              <p>
-                Aqui no Tá Barato todas as empresas ganham espaço para divulgar seus produtos! Desde pequenas vendas até mercados de atacado, no nosso aplicativo, é possível adicionar ofertas. Vem diminuir o desperdício com a gente!
-              </p>
-            </div>
-            <div class="slide">
-              <h3 class="title">Refeição</h3>
-              <img src="assets/images/food_full.jpg" alt="">
-              <p>
-                Quando tudo que você precisa é uma refeição, no aplicativo Tá Barato, você encontra ofertas de pequenos ou grandes empreendimentos, disponibilizando marmitas, refeições completas... E com um clique você pode se comunicar com o vendedor! 
-              </p>
-            </div>
-            <div class="slide">
-              <h3 class="title">Lanches</h3>
-              <img src="assets/images/snack_full.jpg" alt="">
-              <p>
-                Bateu aquela fome de lanche? Aqui você encontra um espaço com as melhores ofertas de lanches na sua região! Você pode encontrar descontos daquela vendinha favorita e até mesmo de lanchonetes do seu bairro. Informe o seu interesse e bom apetite!
-              </p>
-            </div>
+            <div class="swiper-pagination"></div>
           </div>
-          <span onclick="slideLeft()" class="btn"></span>
         </div>
       </div>
     </section>
@@ -247,7 +253,8 @@
 
   <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
 
-  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="main.js"></script>
 </body>
 

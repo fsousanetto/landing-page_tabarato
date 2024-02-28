@@ -382,7 +382,7 @@
     display: grid ;
     place-items: center
   }
-
+/* 
   #slider-container {
     height: 550px;
     width: 85vw;
@@ -453,7 +453,41 @@
     font-size: 1.5rem;
     margin-bottom: 0.75rem;
   }
-  
+  */
+
+  /* SWIPER CARD */
+  .card {
+    width: 20.5rem;
+    border-radius: 0.625rem;
+    background: #0000008c;
+  }
+
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 7rem;
+  }
+
+  .swiper-slide h3 {
+    text-align: center;
+  }
+
+  .swiper-slide p {
+    width: 85%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .swiper .swiper-pagination .swiper-pagination-bullet {
+    background: #cb2e20;
+  }
+
+  .swiper-horizontal .swiper-pagination-bullet .swiper-pagination-horizontal {
+    bottom: 3.5rem;
+  }
+
   /* SOCIAL WORK */
   #social-work {
     background: white;
@@ -692,7 +726,7 @@ textarea {
   
   /* ========= media queries carousel */
 
-  @media only screen and (min-width: 1200px) {
+  /* @media only screen and (min-width: 1200px) {
 
     #slider-container #slider .slide {
       width: calc(2.5% - 20px);
@@ -722,7 +756,7 @@ textarea {
       width: calc(10% - 20px);
     }
 
-  }
+  } */
 
   /*========= MEDIA QUERIES =========*/
   /* extra large devices: 1200 > */
@@ -805,14 +839,22 @@ textarea {
     }
   
     /* cards services */
-    .cards {
-      grid-template-columns: 1fr 1fr;
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 0 7rem;
     }
   
-    .card {
-      padding-left: 3rem;
-      padding-right: 3rem;
-      margin: 0 0.3125rem 0 0.3125rem;
+    .swiper-slide h3 {
+      text-align: center;
+    }
+  
+    .swiper-slide p {
+      width: 85%;
+      margin: auto;
+      margin-top: 2rem;
     }
   
     /* services */
